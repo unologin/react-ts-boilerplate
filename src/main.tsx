@@ -7,7 +7,14 @@ import './style.scss';
 /**  @return App entry point */
 function App() : JSX.Element
 {
-  return <>Hello World</>;
+  if (process.env.SAY_HELLO)
+  {
+    return <>Hello World</>;
+  }
+  else
+  {
+    return <>React + TypeScript</>;
+  }
 }
 
 render(<App/>, document.getElementById('root'));
