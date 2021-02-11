@@ -3,7 +3,7 @@ const webpack           = require('webpack');
 const path              = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const dotenv            = require('dotenv').config({path: __dirname + '/.env'});
-
+const ESLintPlugin      = require('eslint-webpack-plugin');
 
 module.exports = 
 {
@@ -40,8 +40,7 @@ module.exports =
                 '@babel/proposal-object-rest-spread'
               ]
             }
-          },
-          'eslint-loader'
+          }
         ]
       },
       {
@@ -58,6 +57,7 @@ module.exports =
         filename: 'index.html'
       }
     ),
+    new ESLintPlugin(),
     new webpack.DefinePlugin(
       {
           "process.env": dotenv.parsed

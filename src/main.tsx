@@ -9,7 +9,7 @@ function App() : JSX.Element
 {
   if (process.env.SAY_HELLO)
   {
-    return <>Hello World</>;
+    return <>Hello World {undefinedVariable}</>;
   }
   else
   {
