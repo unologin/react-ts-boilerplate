@@ -21,6 +21,7 @@
   },
   "rules": 
   {   
+    "no-trailing-spaces": "off",
     "react/jsx-uses-react": "error",   
     "react/jsx-uses-vars": "error",
     "brace-style": "off",
