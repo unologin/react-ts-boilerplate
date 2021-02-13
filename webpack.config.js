@@ -57,7 +57,11 @@ module.exports =
         filename: 'index.html'
       }
     ),
-    new ESLintPlugin(),
+    new ESLintPlugin(
+      {
+        extensions: ['ts', 'tsx']
+      }
+    ),
     new webpack.DefinePlugin(
       {
           "process.env": dotenv.parsed
