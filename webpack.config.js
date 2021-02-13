@@ -53,7 +53,7 @@ module.exports =
   [
     new HTMLWebpackPlugin(
       {
-        template: 'dist/index.html',
+        template: 'public/index.html',
         filename: 'index.html'
       }
     ),
