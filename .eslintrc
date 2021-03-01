@@ -24,6 +24,7 @@
     "no-trailing-spaces": "off",
     "react/jsx-uses-react": "error",   
     "react/jsx-uses-vars": "error",
+    "object-curly-spacing": "off",
     "brace-style": "off",
     "@typescript-eslint/brace-style":
     [

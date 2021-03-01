@@ -29,8 +29,7 @@ module.exports =
               presets: 
               [
                 '@babel/preset-react',
-                '@babel/preset-env',
-                '@babel/typescript'
+                '@babel/preset-env'
               ],
               plugins: 
               [
@@ -40,7 +39,8 @@ module.exports =
                 '@babel/proposal-object-rest-spread'
               ]
             }
-          }
+          },
+          'ts-loader'
         ]
       },
       {
