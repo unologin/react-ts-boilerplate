@@ -51,6 +51,7 @@
           "body": 1
         }
       }
-    ]
+    ],
+    "block-spacing": [ "error", "always" ]
   }
 }
