@@ -40,6 +40,17 @@
         "requireParamType": false 
       }
     ],
-    "padded-blocks": "off"
+    "padded-blocks": "off",
+    "indent":
+    [
+      "error",
+      2,
+      {
+        "FunctionDeclaration":
+        {
+          "body": 1
+        }
+      }
+    ]
   }
 }
