@@ -15,6 +15,15 @@ const config =
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
   },
+  resolve:
+  {
+    extensions: ['.ts', '.tsx', '.js', '.jsx', '.scss'],
+    modules: 
+    [
+      path.resolve(__dirname, './src/'),
+      path.resolve(__dirname, './node_modules'),
+    ],
+  },
   module: 
   {
     rules: 
