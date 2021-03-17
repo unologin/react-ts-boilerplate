@@ -15,6 +15,7 @@
   "globals":
   {
     "process": "readonly",
-    "JSX": "readonly"
+    "JSX": "readonly",
+    "__dirname": "readonly"
   }
 }
