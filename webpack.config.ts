@@ -1,5 +1,5 @@
 
-import webpack from 'webpack';
+import webpack, { Configuration } from 'webpack';
 import path from 'path';
 import HTMLWebpackPlugin from 'html-webpack-plugin';
 import dotenv from 'dotenv';
@@ -7,7 +7,7 @@ import ESLintPlugin from 'eslint-webpack-plugin';
 
 const env = dotenv.config({path: __dirname + '/.env'});
 
-const config =
+const config : Configuration =
 {
   entry: './src/main.tsx',
   output:
@@ -42,6 +42,11 @@ const config =
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
+  },
+  devServer:
+  {
+    allowedHosts: ['localhost'],
+    historyApiFallback: true,
   },
   plugins: 
   [
