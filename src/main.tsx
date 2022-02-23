@@ -7,7 +7,9 @@ import './style.scss';
 /**  @return App entry point */
 function App() : JSX.Element
 {
-  return <input type="text" onChange={() => { alert('OAJWD'); }} />;
+  return <div>
+    Hello World
+  </div>;
 }
 
 render(<App/>, document.getElementById('root'));
